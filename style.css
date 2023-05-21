@@ -1,0 +1,194 @@
+:root{
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+  
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+  
+    --gray-100: ##CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+  
+    --white: #FFFFFF;
+  }
+
+* {
+    
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    
+}
+
+.logoAlura {
+    margin-left: 15px;
+    padding-top: 10px;
+    width: 2%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+main {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 5rem;
+    
+}
+
+main .text-area{
+    width: 680px;
+    height: 5rem;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    background: transparent;
+    color: var(--dark-blue-300);
+    border: none;
+    outline: none;
+    resize: none;
+    text-transform: lowercase;
+}
+
+main .textarea::placeholder{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: .75rem;
+    padding: 1rem 0;
+}
+
+.info img{
+    width: 16px;
+    height: 16px;
+}
+  
+#encrypted-text {
+    background-image: url(imagens/boneco.png.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    height: 500px;
+    background: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: -20px;
+    right: 20px; 
+    padding-left: 20px;
+    padding-top: 50px;
+    
+}
+
+.mensagem:focus {
+    outline: none;   
+}
+
+.mensagem-naoEncontrada {
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    position: absolute;
+    top: 440px;
+    right: 1px;
+    background-color: white;
+    
+
+    
+    
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-descriptografar {
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 38px;
+    width: 328px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-criptografar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #d8dfe8;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.btn-copiar {
+    border:  1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin: 402px 18px 0 0;
+    position: absolute;
+    width: 328px;
+}
+
+.informacao p{
+    color: #495057;
+    font-size: 18px;
+}
+
