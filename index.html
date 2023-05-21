@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
+    <title>Document</title>
 </head>
 <body>
-   <header>
+
+
+    <header>
         <img class="logoAlura" src="imagens/logoAlura.png" alt="Logo da Alura">
-        
+        <h2 class="titulo">Encriptador de Palavras</h2>
     </header>
 
-    <main>
+    <div class="container">
 
-        
-        <section>
-            <textarea class="text-area" cols="41" rows="4" placeholder="Digite aqui seu texto"></textarea>
+        <div class="alert">
+            <img src="./imagens/info.png" />
+            Apenas letras minúsculas e sem acento.
+        </div>
 
-            <div class="info">
-                <img src="./imagens/info.png" />
-                Apenas letras minúsculas e sem acento.
-            </div>
-        </section>
+        <textarea cols="41" rows="4" id="input-text" placeholder="Digite aqui o seu texto"></textarea>
 
-        <section class="botoes">
-            <button class="btn-criptografar">Criptografar</button>
-            <button class="btn-descriptografar">descriptografar</button>
-        </section>
+        <div class="button-group">
+            <button id="encrypt-button">Encriptar</button>
+            <button id="decrypt-button">Desencriptar</button>
+            <button id="copy-button">Copiar</button>
+        </div>
 
-        <div class="output"></div>
-    </main>    
+        <textarea cols="41" rows="4" id="encrypted-text" placeholder="Nenhuma mensagem codificada." readonly></textarea>
+    </div>
+
+    <footer>
+        <div class="social-media-icons">
+            <a href="https://github.com/JoseJunior07" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jose-junior07" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Encriptador de Palavras. Todos os direitos reservados a José Júnior.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
